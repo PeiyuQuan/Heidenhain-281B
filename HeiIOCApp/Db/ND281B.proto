@@ -1,0 +1,14 @@
+OutTerminator = CR;
+InTerminator = CR LF;
+
+model {out 0x1b, "A\$1"; in STX, "%#s";}
+getsegdisplay {out 0x1b "A0100"; in 0x02 "%#10s";}
+getcurrentvalue {out 0x1b "A0200"; in STX "%#10s";}
+indicatorsfront {out 0x1b "A0900"; in STX "%1d" "%(\$1)1d" "%(\$2)1d" "%(\$3)1d" "%(\$4)1d" "%(\$5)1d" "%(\$6)1d" "%*1d" "%*1d" "%*1d" "%*1d" "%*1d" "%*1d" "%*1d"}
+indicatorsback {out 0x1b "A0900"; in STX "%*1d" "%*1d" "%*1d" "%*1d" "%*1d" "%*1d" "%*1d" "%1d" "%(\$1)1d" "%(\$2)1d" "%(\$3)1d" "%(\$4)1d" "%(\$5)1d" "%(\$6)1d"}
+execute{out 0x1b "F0000"; in ACK;}
+special_keypad {out 0x1b "S0001"; in ACK;}
+specialcounter {out 0x1b "S0000"; in ACK;}
+presskey {out 0x1b "T\$1"; in ACK;}
+errortext {out 0x1b "A0301"; in STX "%#s";}
+

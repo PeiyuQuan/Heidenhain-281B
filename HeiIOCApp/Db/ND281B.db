@@ -1,0 +1,420 @@
+###### press key######
+
+record(bo,"$(P)$(M)presskey_zero")
+{
+	field(DESC, "set zero")
+	field(DTYP, "stream")
+	field(OUT, "@ND281B.proto presskey(0000) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_one")
+{
+        field(DESC, "set one")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0001) $(PORT)")
+}
+
+
+record(bo,"$(P)$(M)presskey_two")
+{
+        field(DESC, "set two")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0002) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_three")
+{
+        field(DESC, "set three")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0003) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_four")
+{
+        field(DESC, "set four")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0004) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_five")
+{
+        field(DESC, "set five")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0005) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_six")
+{
+        field(DESC, "set six")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0006) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_seven")
+{
+        field(DESC, "set seven")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0007) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_eight")
+{
+        field(DESC, "set eight")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0008) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_nine")
+{
+        field(DESC, "set nine")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0009) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CL")
+{
+        field(DESC, "CL key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0100) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_underline")
+{
+        field(DESC, "underline key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0101) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_dot")
+{
+        field(DESC, "dot key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0102) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_ENT")
+{
+        field(DESC, "ENT key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0104) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_mod")
+{
+        field(DESC, "MOD key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0105) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_datum")
+{
+        field(DESC, "datum key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(0107) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE0")
+{
+        field(DESC, "CE0 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1000) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE1")
+{
+        field(DESC, "CE1 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1001) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE2")
+{
+        field(DESC, "CE2 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1002) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE3")
+{
+        field(DESC, "CE3 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1003) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE4")
+{
+        field(DESC, "CE4 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1004) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE5")
+{
+        field(DESC, "CE5 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1005) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE6")
+{
+        field(DESC, "CE6 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1006) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE7")
+{
+        field(DESC, "CE7 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1007) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE8")
+{
+        field(DESC, "CE8 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1008) $(PORT)")
+}
+
+record(bo,"$(P)$(M)presskey_CE9")
+{
+        field(DESC, "CE9 key")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto presskey(1009) $(PORT)")
+}
+
+
+####model designation #####
+record (stringin, "$(P)$(M)model_unit")
+{
+        field(DESC, "model unit")
+        field(DTYP, "stream")
+        field(INP, "@ND281B.proto model(0000) $(PORT)")
+        field(SCAN, "1 second")
+}
+
+record (stringin, "$(P)$(M)software_number")
+{
+        field(DESC, "software number")
+        field(DTYP, "stream")
+        field(INP, "@ND281B.proto model(0400) $(PORT)")
+        field(SCAN, "1 second")
+}
+
+#######output of 14-segment display#####
+record (stringin, "$(P)$(M)segment_display")
+{
+        field(DESC, "14-segment display")
+        field(DTYP, "stream")
+        field(INP, "@ND281B.proto getsegdisplay $(PORT)")
+	field(SCAN, "1 second")
+}
+
+record(stringin,"$(P)$(M)current_value")
+{
+        field(DESC, "get current value")
+        field(DTYP, "stream")
+        field(INP, "@ND281B.proto getcurrentvalue $(PORT)")
+	field(SCAN, "1 second")
+}
+
+record(bo,"$(P)$(M)excute_REF")
+{
+        field(DESC, "change REF")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto execute(0000) $(PORT)")
+}
+
+
+record(bo,"$(P)$(M)special_counter")
+{
+        field(DESC, "reset counter")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto specialcounter $(PORT)")
+}
+
+record(bo,"$(P)$(M)keypad_locked")
+{
+        field(DESC, "lock keypad")
+        field(DTYP, "stream")
+        field(OUT, "@ND281B.proto special_keypad $(PORT)")
+}
+
+
+#####indicator#######
+record(mbbi,"$(P)$(M)indicator_REF")
+{
+        field(DESC, "REF indicator")
+        field(DTYP, "stream")
+        field(INP, "@ND281B.proto indicatorsfront($(P)$(M)indicator_datum1,$(P)$(M)indicator_datum2,$(P)$(M)indicator_SET,$(P)$(M)indicator_START,$(P)$(M)indicator_PRINT,$(P)$(M)indicator_inch) $(PORT)")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+record(mbbi,"$(P)$(M)indicator_datum1")
+{
+        field(DESC, "datum1 indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+record(mbbi,"$(P)$(M)indicator_datum2")
+{
+        field(DESC, "datum2 indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+record(mbbi,"$(P)$(M)indicator_SET")
+{
+        field(DESC, "set indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+record(mbbi,"$(P)$(M)indicator_START")
+{
+        field(DESC, "start indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+record(mbbi,"$(P)$(M)indicator_PRINT")
+{
+        field(DESC, "print indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+record(mbbi,"$(P)$(M)indicator_inch")
+{
+        field(DESC, "inch indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+
+record(mbbi,"$(P)$(M)indicator_greatsign")
+{
+        field(DESC, "great sign indicator")
+        field(DTYP, "stream")
+        field(INP, "@ND281B.proto indicatorsback($(P)$(M)indicator_greatsign,$(P)$(M)indicator_equalsign,$(P)$(M)indicator_lesssign,$(P)$(M)indicator_MIN,$(P)$(M)indicator_ACTL,$(P)$(M)indicator_MAX,$(P)$(M)indicator_DIFF) $(PORT)")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+
+record(mbbi,"$(P)$(M)indicator_equalsign")
+{
+        field(DESC, "equal sign indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+record(mbbi,"$(P)$(M)indicator_lesssign")
+{
+        field(DESC, "less sign indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+record(mbbi,"$(P)$(M)indicator_MIN")
+{
+        field(DESC, "MIN indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+record(mbbi,"$(P)$(M)indicator_ACTL")
+{
+        field(DESC, "ACTL indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+record(mbbi,"$(P)$(M)indicator_MAX")
+{
+        field(DESC, "MAX indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+record(mbbi,"$(P)$(M)indicator_DIFF")
+{
+        field(DESC, "DIFF indicator")
+        field(ZRVL, "0")
+        field(ZRST, "dark")
+        field(ONVL, "1")
+        field(ONST, "glows")
+        field(TWVL, "2")
+        field(TWST, "blinks")
+        field(SCAN, "1 second")
+}
+
+record(stringin,"$(P)$(M)error_infor")
+{
+	field(DESC, "error information")
+        field(DTYP, "stream")
+        field(INP, "@ND281B.proto errortext $(PORT)")
+        field(SCAN, "1 second")
+}
