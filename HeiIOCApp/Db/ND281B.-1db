@@ -1,7 +1,0 @@
-record (stringin, "$(P)$(M)segment_display")
-{
-        field(DESC, "14-segment display")
-        field(DTYP, "stream")
-        field(INP, "@ND281B.proto getsegdisplay $(PORT)")
-	field(SCAN, "1 second")
-}
