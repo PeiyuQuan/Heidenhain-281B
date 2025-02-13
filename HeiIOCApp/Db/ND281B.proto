@@ -10,5 +10,3 @@ execute{out 0x1b "F0000"; in ACK;}
 special_keypad {out 0x1b "S0001"; in ACK;}
 specialcounter {out 0x1b "S0000"; in ACK;}
 presskey {out 0x1b "T\$1"; in ACK;}
-errortext {out 0x1b "A0301"; in STX "%#s";}
-
