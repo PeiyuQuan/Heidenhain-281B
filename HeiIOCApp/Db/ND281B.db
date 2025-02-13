@@ -410,11 +410,3 @@ record(mbbi,"$(P)$(M)indicator_DIFF")
         field(TWST, "blinks")
         field(SCAN, "1 second")
 }
-
-record(stringin,"$(P)$(M)error_infor")
-{
-	field(DESC, "error information")
-        field(DTYP, "stream")
-        field(INP, "@ND281B.proto errortext $(PORT)")
-        field(SCAN, "1 second")
-}
