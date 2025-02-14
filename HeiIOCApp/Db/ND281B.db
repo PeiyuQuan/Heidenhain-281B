@@ -217,6 +217,7 @@ record (calc, $(P)$(M)mono)
 	field(INPA,"$(P)$(M)segment_display.VAL")
 	field(CALC, "1977.04178/sin(A*0.0174533)")
 	field(EGU, "eV")
+	field(PREC, "2")
 }
 
 record(stringin,"$(P)$(M)current_value")
