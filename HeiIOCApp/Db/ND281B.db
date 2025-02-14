@@ -215,7 +215,7 @@ record (calc, $(P)$(M)mono)
 {
 	field(DESC,"energy")
 	field(INPA,"$(P)$(M)segment_display.VAL")
-	field(CALC, "1977.04/SIN(A)")
+	field(CALC, "1977.04178/sin(A*0.0174533)")
 	field(EGU, "eV")
 }
 
