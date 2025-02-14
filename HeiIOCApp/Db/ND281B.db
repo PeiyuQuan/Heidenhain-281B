@@ -208,6 +208,15 @@ record (stringin, "$(P)$(M)segment_display")
         field(DTYP, "stream")
         field(INP, "@ND281B.proto getsegdisplay $(PORT)")
 	field(SCAN, "1 second")
+	field(FLNK, "$(P)$(M)mono")
+}
+
+record (calc, $(P)$(M)mono)
+{
+	field(DESC,"energy")
+	field(INPA,"$(P)$(M)segment_display.VAL")
+	field(CALC, "1977.04/SIN(A)")
+	field(EGU, "eV")
 }
 
 record(stringin,"$(P)$(M)current_value")
