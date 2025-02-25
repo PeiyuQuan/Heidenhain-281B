@@ -55,7 +55,7 @@ HeiIOC_DBD += drvAsynSerialPort.dbd
 HeiIOC_DBD += calc.dbd
 HeiIOC_DBD += stream-scalcout.dbd
 HeiIOC_DBD += stream.dbd
-HeiIOC_DBD += as.dbd
+#HeiIOC_DBD += as.dbd
 HeiIOC_DBD += asSupport.dbd
 # HeiIOC_registerRecordDeviceDriver.cpp derives from HeiIOC.dbd
 HeiIOC_SRCS += HeiIOC_registerRecordDeviceDriver.cpp
