@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-02-12 17:08:29 by specadm-->
+<!--Saved on 2025-02-14 11:46:50 by specadm-->
 <display version="2.0.0">
   <name>Hei281B</name>
   <x>2212</x>
@@ -14,9 +14,10 @@
   <grid_step_x>5</grid_step_x>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_2</name>
-    <y>4</y>
-    <width>685</width>
-    <height>281</height>
+    <x>17</x>
+    <y>11</y>
+    <width>605</width>
+    <height>310</height>
     <line_color>
       <color name="Header_Background" red="77" green="77" blue="77">
       </color>
@@ -25,17 +26,17 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_1</name>
-    <x>395</x>
-    <y>201</y>
-    <width>240</width>
-    <height>80</height>
+    <x>344</x>
+    <y>69</y>
+    <width>210</width>
+    <height>82</height>
     <transparent>true</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>text #6</name>
     <text>Heidenhain 281B</text>
-    <x>182</x>
-    <y>5</y>
+    <x>197</x>
+    <y>13</y>
     <width>286</width>
     <height>26</height>
     <font>
@@ -47,8 +48,8 @@
   <widget type="label" version="2.0.0">
     <name>text #16</name>
     <text>Software number</text>
-    <x>379</x>
-    <y>29</y>
+    <x>332</x>
+    <y>42</y>
     <width>130</width>
     <height>18</height>
     <font>
@@ -64,8 +65,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>text update #19</name>
     <pv_name>$(P)$(M)software_number</pv_name>
-    <x>516</x>
-    <y>26</y>
+    <x>459</x>
+    <y>39</y>
     <width>145</width>
     <height>25</height>
     <font>
@@ -96,8 +97,8 @@
   <widget type="label" version="2.0.0">
     <name>text #225</name>
     <text>Special function</text>
-    <x>458</x>
-    <y>208</y>
+    <x>407</x>
+    <y>76</y>
     <width>113</width>
     <height>19</height>
     <font>
@@ -113,8 +114,8 @@
   <widget type="label" version="2.0.0">
     <name>text #228</name>
     <text>Counter reset</text>
-    <x>415</x>
-    <y>226</y>
+    <x>364</x>
+    <y>94</y>
     <width>97</width>
     <height>19</height>
     <font>
@@ -130,8 +131,8 @@
   <widget type="label" version="2.0.0">
     <name>text #234</name>
     <text>Lock keypad</text>
-    <x>417</x>
-    <y>252</y>
+    <x>366</x>
+    <y>120</y>
     <width>90</width>
     <height>19</height>
     <font>
@@ -155,8 +156,8 @@
     </actions>
     <pv_name>$(P)$(M)keypad_locked</pv_name>
     <text>lock</text>
-    <x>548</x>
-    <y>252</y>
+    <x>497</x>
+    <y>120</y>
     <width>41</width>
     <height>25</height>
     <background_color>
@@ -167,8 +168,8 @@
   <widget type="label" version="2.0.0">
     <name>text #240</name>
     <text>Current value</text>
-    <x>15</x>
-    <y>55</y>
+    <x>30</x>
+    <y>63</y>
     <width>97</width>
     <height>19</height>
     <font>
@@ -176,7 +177,7 @@
       </font>
     </font>
     <foreground_color>
-      <color name="MAJOR" red="255" green="0" blue="0">
+      <color red="0" green="0" blue="255">
       </color>
     </foreground_color>
     <background_color>
@@ -188,8 +189,8 @@
   <widget type="label" version="2.0.0">
     <name>text #243</name>
     <text>segment display</text>
-    <x>2</x>
-    <y>74</y>
+    <x>20</x>
+    <y>92</y>
     <width>116</width>
     <height>19</height>
     <font>
@@ -209,8 +210,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>text update #246</name>
     <pv_name>$(P)$(M)current_value</pv_name>
-    <x>148</x>
-    <y>54</y>
+    <x>141</x>
+    <y>60</y>
     <width>182</width>
     <height>25</height>
     <font>
@@ -218,7 +219,7 @@
       </font>
     </font>
     <background_color>
-      <color name="Write_Background" red="128" green="255" blue="255">
+      <color name="Attention" red="255" green="160" blue="0">
       </color>
     </background_color>
     <format>1</format>
@@ -228,8 +229,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>text update #250</name>
     <pv_name>$(P)$(M)segment_display</pv_name>
-    <x>148</x>
-    <y>81</y>
+    <x>141</x>
+    <y>89</y>
     <width>182</width>
     <height>25</height>
     <font>
@@ -246,8 +247,8 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>531</x>
-    <y>53</y>
+    <x>474</x>
+    <y>159</y>
     <width>141</width>
     <height>142</height>
     <style>3</style>
@@ -488,23 +489,6 @@
           </color>
         </background_color>
       </widget>
-      <widget type="label" version="2.0.0">
-        <name>text #114</name>
-        <text>CE Key</text>
-        <x>36</x>
-        <y>1</y>
-        <width>55</width>
-        <height>19</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="16.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color red="253" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <auto_size>true</auto_size>
-      </widget>
       <widget type="action_button" version="3.0.0">
         <name>message button #117</name>
         <actions>
@@ -534,7 +518,8 @@
   <widget type="label" version="2.0.0">
     <name>text #16_1</name>
     <text>Model</text>
-    <y>32</y>
+    <x>15</x>
+    <y>40</y>
     <width>130</width>
     <height>18</height>
     <font>
@@ -550,8 +535,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>text update #19_1</name>
     <pv_name>$(P)$(M)model_unit</pv_name>
-    <x>102</x>
-    <y>26</y>
+    <x>142</x>
+    <y>32</y>
     <width>147</width>
     <height>25</height>
     <font>
@@ -568,8 +553,8 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>45</x>
-    <y>104</y>
+    <x>31</x>
+    <y>142</y>
     <width>260</width>
     <height>170</height>
     <style>3</style>
@@ -593,7 +578,7 @@
           <text>Status</text>
           <x>99</x>
           <width>46</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -605,7 +590,7 @@
           <text>REF</text>
           <y>27</y>
           <width>32</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -617,7 +602,7 @@
           <text>datum1</text>
           <y>49</y>
           <width>54</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -629,7 +614,7 @@
           <text>datum2</text>
           <y>71</y>
           <width>54</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -641,7 +626,7 @@
           <text>SET</text>
           <y>91</y>
           <width>32</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -653,7 +638,7 @@
           <text>START</text>
           <y>109</y>
           <width>53</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -665,7 +650,7 @@
           <text>PRINT</text>
           <y>127</y>
           <width>48</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -677,7 +662,7 @@
           <text>inch</text>
           <y>144</y>
           <width>30</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -690,7 +675,7 @@
           <x>140</x>
           <y>22</y>
           <width>10</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -703,7 +688,7 @@
           <x>140</x>
           <y>44</y>
           <width>10</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -716,7 +701,7 @@
           <x>140</x>
           <y>66</y>
           <width>10</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -729,7 +714,7 @@
           <x>132</x>
           <y>86</y>
           <width>30</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -742,7 +727,7 @@
           <x>132</x>
           <y>104</y>
           <width>41</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -755,7 +740,7 @@
           <x>132</x>
           <y>122</y>
           <width>35</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -768,7 +753,7 @@
           <x>132</x>
           <y>139</y>
           <width>36</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Liberation Sans" style="REGULAR" size="16.0">
             </font>
@@ -1109,8 +1094,8 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle</name>
-    <x>45</x>
-    <y>109</y>
+    <x>31</x>
+    <y>146</y>
     <width>260</width>
     <height>170</height>
     <line_color>
@@ -1121,8 +1106,8 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>369</x>
-    <y>53</y>
+    <x>312</x>
+    <y>159</y>
     <width>144</width>
     <height>145</height>
     <style>3</style>
@@ -1524,30 +1509,13 @@
             </color>
           </background_color>
         </widget>
-        <widget type="label" version="2.0.0">
-          <name>text #75</name>
-          <text>Key</text>
-          <x>62</x>
-          <y>3</y>
-          <width>28</width>
-          <height>19</height>
-          <font>
-            <font family="Liberation Sans" style="REGULAR" size="16.0">
-            </font>
-          </font>
-          <foreground_color>
-            <color red="253" green="0" blue="0">
-            </color>
-          </foreground_color>
-          <auto_size>true</auto_size>
-        </widget>
       </widget>
     </widget>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>rectangle #78</name>
-    <x>365</x>
-    <y>53</y>
+    <x>308</x>
+    <y>159</y>
     <width>143</width>
     <height>145</height>
     <line_width>2</line_width>
@@ -1572,13 +1540,91 @@
     </actions>
     <pv_name>$(P)$(M)special_counter</pv_name>
     <text>reset</text>
-    <x>548</x>
-    <y>226</y>
+    <x>497</x>
+    <y>94</y>
     <width>41</width>
     <height>25</height>
     <background_color>
       <color red="115" green="223" blue="255">
       </color>
     </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #114</name>
+    <text>CE Key</text>
+    <x>510</x>
+    <y>161</y>
+    <width>55</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #75</name>
+    <text>Key</text>
+    <x>375</x>
+    <y>163</y>
+    <width>28</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="text-symbol" version="2.0.0">
+    <name>Text Symbol</name>
+    <x>460</x>
+    <y>650</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(M)mono</pv_name>
+    <x>141</x>
+    <y>115</y>
+    <width>182</width>
+    <height>28</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #240_1</name>
+    <text>Energy</text>
+    <x>51</x>
+    <y>118</y>
+    <width>51</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Off" red="60" green="100" blue="60">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
   </widget>
 </display>
