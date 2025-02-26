@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=117
-		y=378
-		width=620
-		height=310
+		x=531
+		y=323
+		width=590
+		height=315
 	}
 	clr=14
 	bclr=4
@@ -117,1044 +117,1094 @@ polyline {
 		(792,34)
 	}
 }
-text {
+composite {
 	object {
-		x=50
-		y=46
-		width=40
-		height=18
-	}
-	"basic attribute" {
-		clr=54
-	}
-	textix="Model"
-	align="horiz. centered"
-}
-"text update" {
-	object {
-		x=140
-		y=44
-		width=150
-		height=20
-	}
-	monitor {
-		chan="$(P)$(M)model_unit"
-		clr=14
-		bclr=45
-	}
-	limits {
-	}
-}
-text {
-	object {
-		x=312
-		y=45
-		width=130
-		height=18
-	}
-	"basic attribute" {
-		clr=54
-	}
-	textix="Software number"
-	align="horiz. centered"
-}
-"text update" {
-	object {
-		x=446
+		x=5
 		y=43
-		width=150
-		height=20
-	}
-	monitor {
-		chan="$(P)$(M)software_number"
-		clr=14
-		bclr=45
-	}
-	limits {
-	}
-}
-text {
-	object {
-		x=27
-		y=67
-		width=86
-		height=18
-	}
-	"basic attribute" {
-		clr=20
-	}
-	textix="Current value"
-}
-text {
-	object {
-		x=22
-		y=91
-		width=107
-		height=18
-	}
-	"basic attribute" {
-		clr=20
-	}
-	textix="segment display"
-}
-"text update" {
-	object {
-		x=142
-		y=66
-		width=150
-		height=20
-	}
-	monitor {
-		chan="$(P)$(M)current_value"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=142
-		y=89
-		width=150
-		height=20
-	}
-	monitor {
-		chan="$(P)$(M)segment_display"
-		clr=14
-		bclr=51
-	}
-	limits {
-	}
-}
-"message button" {
-	object {
-		x=329
-		y=95
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_ENT"
-		clr=54
-		bclr=45
-	}
-	label="ENT"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=360
-		y=95
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_seven"
-		clr=54
-		bclr=45
-	}
-	label="7"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=392
-		y=95
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_eight"
-		clr=54
-		bclr=45
-	}
-	label="8"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=423
-		y=95
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_nine"
-		clr=54
-		bclr=45
-	}
-	label="9"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=314
-		y=123
-		width=46
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_datum"
-		clr=54
-		bclr=45
-	}
-	label="L1/L2"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=360
-		y=123
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_four"
-		clr=54
-		bclr=45
-	}
-	label="4"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=392
-		y=123
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_five"
-		clr=54
-		bclr=45
-	}
-	label="5"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=423
-		y=123
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_six"
-		clr=54
-		bclr=45
-	}
-	label="6"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=322
-		y=152
-		width=33
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_mod"
-		clr=54
-		bclr=45
-	}
-	label="MOD"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=360
-		y=152
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_one"
-		clr=54
-		bclr=45
-	}
-	label="1"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=392
-		y=152
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_two"
-		clr=54
-		bclr=45
-	}
-	label="2"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=423
-		y=152
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_three"
-		clr=54
-		bclr=45
-	}
-	label="3"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=330
-		y=180
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CL"
-		clr=54
-		bclr=45
-	}
-	label="CL"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=361
-		y=180
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_zero"
-		clr=54
-		bclr=45
-	}
-	label="0"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=393
-		y=180
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_dot"
-		clr=54
-		bclr=45
-	}
-	label="."
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=424
-		y=180
-		width=26
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_underline"
-		clr=54
-		bclr=45
-	}
-	label="-"
-	press_msg="1"
-}
-text {
-	object {
-		x=374
-		y=70
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	textix="Key"
-}
-rectangle {
-	object {
-		x=312
-		y=67
-		width=143
-		height=145
-	}
-	"basic attribute" {
-		clr=15
-		fill="outline"
-		width=2
-	}
-}
-"message button" {
-	object {
-		x=468
-		y=93
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE7"
-		clr=54
-		bclr=45
-	}
-	label="CE+7"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=511
-		y=93
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE8"
-		clr=54
-		bclr=45
-	}
-	label="CE+8"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=555
-		y=93
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE9"
-		clr=54
-		bclr=45
-	}
-	label="CE+9"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=468
-		y=121
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE4"
-		clr=54
-		bclr=45
-	}
-	label="CE+4"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=511
-		y=121
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE5"
-		clr=54
-		bclr=45
-	}
-	label="CE+5"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=555
-		y=121
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE6"
-		clr=54
-		bclr=45
-	}
-	label="CE+6"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=468
-		y=150
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE1"
-		clr=54
-		bclr=45
-	}
-	label="CE+1"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=511
-		y=150
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE2"
-		clr=54
-		bclr=45
-	}
-	label="CE+2"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=555
-		y=150
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE3"
-		clr=54
-		bclr=45
-	}
-	label="CE+3"
-	press_msg="1"
-}
-text {
-	object {
-		x=496
-		y=68
-		width=25
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	textix="CE Key"
-}
-"message button" {
-	object {
-		x=511
-		y=179
-		width=40
-		height=25
-	}
-	control {
-		chan="$(P)$(M)presskey_CE0"
-		clr=54
-		bclr=45
-	}
-	label="CE+0"
-	press_msg="1"
-}
-rectangle {
-	object {
-		x=460
-		y=67
-		width=141
-		height=142
-	}
-	"basic attribute" {
-		clr=25
-		fill="outline"
-		width=3
-	}
-	"dynamic attribute" {
-		chan="$(P)$(M)presskey_CE0"
-	}
-}
-text {
-	object {
-		x=397
-		y=223
-		width=94
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Special function"
-}
-text {
-	object {
-		x=376
-		y=251
-		width=73
-		height=18
-	}
-	"basic attribute" {
-		clr=20
-	}
-	textix="Counter reset"
-}
-text {
-	object {
-		x=382
-		y=271
-		width=56
-		height=18
-	}
-	"basic attribute" {
-		clr=20
-	}
-	textix="Lock keypad"
-}
-"message button" {
-	object {
-		x=507
-		y=271
-		width=41
-		height=25
-	}
-	control {
-		chan="$(P)$(M)keypad_locked"
-		clr=14
-		bclr=51
-	}
-	label="lock"
-	press_msg="1"
-}
-"message button" {
-	object {
-		x=507
-		y=244
-		width=41
-		height=25
-	}
-	control {
-		chan="$(P)$(M)special_counter"
-		clr=14
-		bclr=51
-	}
-	label="reset"
-	press_msg="1"
-}
-rectangle {
-	object {
-		x=358
-		y=215
-		width=201
-		height=86
-	}
-	"basic attribute" {
-		clr=54
-		fill="outline"
-		width=3
-	}
-	"dynamic attribute" {
-		chan="$(P)$(M)keypad_locked"
-	}
-}
-text {
-	object {
-		x=139
-		y=118
-		width=99
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Status"
-}
-text {
-	object {
-		x=40
-		y=145
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="REF"
-}
-text {
-	object {
-		x=40
-		y=167
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="datum1"
-}
-text {
-	object {
-		x=40
-		y=189
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="datum2"
-}
-text {
-	object {
-		x=40
-		y=209
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="SET"
-}
-text {
-	object {
-		x=40
-		y=227
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="START"
-}
-text {
-	object {
-		x=40
-		y=245
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="PRINT"
-}
-text {
-	object {
-		x=40
-		y=262
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="inch"
-}
-text {
-	object {
-		x=179
-		y=140
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="<"
-}
-text {
-	object {
-		x=179
-		y=162
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="="
-}
-text {
-	object {
-		x=179
-		y=184
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix=">"
-}
-text {
-	object {
-		x=171
-		y=206
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="MIN"
-}
-text {
-	object {
-		x=171
-		y=222
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="ACTL"
-}
-text {
-	object {
-		x=171
-		y=240
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="MAX"
-}
-text {
-	object {
-		x=171
-		y=257
-		width=62
-		height=18
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="DIFF"
-}
-"text update" {
-	object {
-		x=89
-		y=144
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_REF"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=89
-		y=164
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_datum1"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=89
-		y=185
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_datum2"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=89
-		y=206
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_SET"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=89
-		y=223
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_START"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=89
-		y=241
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_PRINT"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=89
-		y=261
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_inch"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=208
-		y=144
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_greatsign"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=208
-		y=164
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_equalsign"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=208
-		y=185
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_lesssign"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=208
-		y=206
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_MIN"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=208
-		y=223
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_ACTL"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=208
-		y=241
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_MAX"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=208
-		y=261
-		width=75
-		height=19
-	}
-	monitor {
-		chan="$(P)$(M)indicator_DIFF"
-		clr=20
-		bclr=55
-	}
-	limits {
-	}
-}
-rectangle {
-	object {
-		x=29
-		y=114
-		width=265
-		height=176
-	}
-	"basic attribute" {
-		clr=15
-		fill="outline"
-		width=3
-	}
-	"dynamic attribute" {
-		chan="$(P)$(M)indicator_greatsign"
+		width=579
+		height=267
+	}
+	"composite name"=""
+	children {
+		text {
+			object {
+				x=33
+				y=46
+				width=40
+				height=18
+			}
+			"basic attribute" {
+				clr=54
+			}
+			textix="Model"
+			align="horiz. centered"
+		}
+		"text update" {
+			object {
+				x=123
+				y=44
+				width=150
+				height=20
+			}
+			monitor {
+				chan="$(P)$(M)model_unit"
+				clr=14
+				bclr=45
+			}
+			limits {
+			}
+		}
+		text {
+			object {
+				x=295
+				y=45
+				width=130
+				height=18
+			}
+			"basic attribute" {
+				clr=54
+			}
+			textix="Software number"
+			align="horiz. centered"
+		}
+		"text update" {
+			object {
+				x=429
+				y=43
+				width=150
+				height=20
+			}
+			monitor {
+				chan="$(P)$(M)software_number"
+				clr=14
+				bclr=45
+			}
+			limits {
+			}
+		}
+		text {
+			object {
+				x=10
+				y=67
+				width=86
+				height=18
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="Current value"
+		}
+		text {
+			object {
+				x=5
+				y=91
+				width=107
+				height=18
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="segment display"
+		}
+		"text update" {
+			object {
+				x=125
+				y=66
+				width=150
+				height=20
+			}
+			monitor {
+				chan="$(P)$(M)current_value"
+				clr=14
+				bclr=51
+			}
+			limits {
+			}
+		}
+		"text update" {
+			object {
+				x=125
+				y=89
+				width=150
+				height=20
+			}
+			monitor {
+				chan="$(P)$(M)segment_display"
+				clr=14
+				bclr=51
+			}
+			limits {
+			}
+		}
+		"message button" {
+			object {
+				x=312
+				y=95
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_ENT"
+				clr=54
+				bclr=45
+			}
+			label="ENT"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=343
+				y=95
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_seven"
+				clr=54
+				bclr=45
+			}
+			label="7"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=375
+				y=95
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_eight"
+				clr=54
+				bclr=45
+			}
+			label="8"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=406
+				y=95
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_nine"
+				clr=54
+				bclr=45
+			}
+			label="9"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=297
+				y=123
+				width=46
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_datum"
+				clr=54
+				bclr=45
+			}
+			label="L1/L2"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=343
+				y=123
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_four"
+				clr=54
+				bclr=45
+			}
+			label="4"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=375
+				y=123
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_five"
+				clr=54
+				bclr=45
+			}
+			label="5"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=406
+				y=123
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_six"
+				clr=54
+				bclr=45
+			}
+			label="6"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=305
+				y=152
+				width=33
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_mod"
+				clr=54
+				bclr=45
+			}
+			label="MOD"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=343
+				y=152
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_one"
+				clr=54
+				bclr=45
+			}
+			label="1"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=375
+				y=152
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_two"
+				clr=54
+				bclr=45
+			}
+			label="2"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=406
+				y=152
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_three"
+				clr=54
+				bclr=45
+			}
+			label="3"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=313
+				y=180
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CL"
+				clr=54
+				bclr=45
+			}
+			label="CL"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=344
+				y=180
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_zero"
+				clr=54
+				bclr=45
+			}
+			label="0"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=376
+				y=180
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_dot"
+				clr=54
+				bclr=45
+			}
+			label="."
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=407
+				y=180
+				width=26
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_underline"
+				clr=54
+				bclr=45
+			}
+			label="-"
+			press_msg="1"
+		}
+		text {
+			object {
+				x=357
+				y=70
+				width=25
+				height=20
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="Key"
+		}
+		rectangle {
+			object {
+				x=295
+				y=67
+				width=143
+				height=145
+			}
+			"basic attribute" {
+				clr=15
+				fill="outline"
+				width=2
+			}
+		}
+		"message button" {
+			object {
+				x=451
+				y=93
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE7"
+				clr=54
+				bclr=45
+			}
+			label="CE+7"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=494
+				y=93
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE8"
+				clr=54
+				bclr=45
+			}
+			label="CE+8"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=538
+				y=93
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE9"
+				clr=54
+				bclr=45
+			}
+			label="CE+9"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=451
+				y=121
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE4"
+				clr=54
+				bclr=45
+			}
+			label="CE+4"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=494
+				y=121
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE5"
+				clr=54
+				bclr=45
+			}
+			label="CE+5"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=538
+				y=121
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE6"
+				clr=54
+				bclr=45
+			}
+			label="CE+6"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=451
+				y=150
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE1"
+				clr=54
+				bclr=45
+			}
+			label="CE+1"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=494
+				y=150
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE2"
+				clr=54
+				bclr=45
+			}
+			label="CE+2"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=538
+				y=150
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE3"
+				clr=54
+				bclr=45
+			}
+			label="CE+3"
+			press_msg="1"
+		}
+		text {
+			object {
+				x=479
+				y=68
+				width=25
+				height=20
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="CE Key"
+		}
+		"message button" {
+			object {
+				x=494
+				y=179
+				width=40
+				height=25
+			}
+			control {
+				chan="$(P)$(M)presskey_CE0"
+				clr=54
+				bclr=45
+			}
+			label="CE+0"
+			press_msg="1"
+		}
+		rectangle {
+			object {
+				x=443
+				y=67
+				width=141
+				height=142
+			}
+			"basic attribute" {
+				clr=25
+				fill="outline"
+				width=3
+			}
+			"dynamic attribute" {
+				chan="$(P)$(M)presskey_CE0"
+			}
+		}
+		text {
+			object {
+				x=380
+				y=223
+				width=94
+				height=18
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Special function"
+		}
+		text {
+			object {
+				x=359
+				y=251
+				width=73
+				height=18
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="Counter reset"
+		}
+		text {
+			object {
+				x=365
+				y=271
+				width=56
+				height=18
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="Lock keypad"
+		}
+		"message button" {
+			object {
+				x=490
+				y=271
+				width=41
+				height=25
+			}
+			control {
+				chan="$(P)$(M)keypad_locked"
+				clr=14
+				bclr=51
+			}
+			label="lock"
+			press_msg="1"
+		}
+		"message button" {
+			object {
+				x=490
+				y=244
+				width=41
+				height=25
+			}
+			control {
+				chan="$(P)$(M)special_counter"
+				clr=14
+				bclr=51
+			}
+			label="reset"
+			press_msg="1"
+		}
+		rectangle {
+			object {
+				x=341
+				y=215
+				width=201
+				height=86
+			}
+			"basic attribute" {
+				clr=54
+				fill="outline"
+				width=3
+			}
+			"dynamic attribute" {
+				chan="$(P)$(M)keypad_locked"
+			}
+		}
+		composite {
+			object {
+				x=12
+				y=134
+				width=265
+				height=176
+			}
+			"composite name"=""
+			children {
+				text {
+					object {
+						x=122
+						y=138
+						width=99
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="Status"
+				}
+				text {
+					object {
+						x=23
+						y=165
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="REF"
+				}
+				text {
+					object {
+						x=23
+						y=187
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="datum1"
+				}
+				text {
+					object {
+						x=23
+						y=209
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="datum2"
+				}
+				text {
+					object {
+						x=23
+						y=228
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="SET"
+				}
+				text {
+					object {
+						x=23
+						y=246
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="START"
+				}
+				text {
+					object {
+						x=23
+						y=264
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="PRINT"
+				}
+				text {
+					object {
+						x=23
+						y=281
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="inch"
+				}
+				text {
+					object {
+						x=162
+						y=159
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="<"
+				}
+				text {
+					object {
+						x=162
+						y=182
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="="
+				}
+				text {
+					object {
+						x=162
+						y=204
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix=">"
+				}
+				text {
+					object {
+						x=154
+						y=226
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="MIN"
+				}
+				text {
+					object {
+						x=154
+						y=242
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="ACTL"
+				}
+				text {
+					object {
+						x=154
+						y=260
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="MAX"
+				}
+				text {
+					object {
+						x=154
+						y=277
+						width=62
+						height=18
+					}
+					"basic attribute" {
+						clr=14
+					}
+					textix="DIFF"
+				}
+				"text update" {
+					object {
+						x=72
+						y=165
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_REF"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=72
+						y=184
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_datum1"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=72
+						y=205
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_datum2"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=72
+						y=226
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_SET"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=72
+						y=243
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_START"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=72
+						y=261
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_PRINT"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=72
+						y=280
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_inch"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=191
+						y=165
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_greatsign"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=191
+						y=184
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_equalsign"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=191
+						y=205
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_lesssign"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=191
+						y=226
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_MIN"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=191
+						y=243
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_ACTL"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=191
+						y=261
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_MAX"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=191
+						y=280
+						width=75
+						height=19
+					}
+					monitor {
+						chan="$(P)$(M)indicator_DIFF"
+						clr=20
+						bclr=55
+					}
+					limits {
+					}
+				}
+				rectangle {
+					object {
+						x=12
+						y=134
+						width=265
+						height=176
+					}
+					"basic attribute" {
+						clr=15
+						fill="outline"
+						width=3
+					}
+					"dynamic attribute" {
+						chan="$(P)$(M)indicator_greatsign"
+					}
+				}
+			}
+		}
+		text {
+			object {
+				x=8
+				y=113
+				width=107
+				height=18
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="Energy"
+			align="horiz. centered"
+		}
+		"text update" {
+			object {
+				x=125
+				y=112
+				width=150
+				height=20
+			}
+			monitor {
+				chan="$(P)$(M)mono"
+				clr=14
+				bclr=51
+			}
+			limits {
+			}
+		}
 	}
 }
