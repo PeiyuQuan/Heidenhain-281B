@@ -275,7 +275,6 @@ record(mbbi,"$(P)$(M)indicator_datum1")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 record(mbbi,"$(P)$(M)indicator_datum2")
 {
@@ -286,7 +285,6 @@ record(mbbi,"$(P)$(M)indicator_datum2")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 
 record(mbbi,"$(P)$(M)indicator_SET")
@@ -298,7 +296,6 @@ record(mbbi,"$(P)$(M)indicator_SET")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 record(mbbi,"$(P)$(M)indicator_START")
 {
@@ -309,7 +306,6 @@ record(mbbi,"$(P)$(M)indicator_START")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 
 record(mbbi,"$(P)$(M)indicator_PRINT")
@@ -321,7 +317,6 @@ record(mbbi,"$(P)$(M)indicator_PRINT")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 record(mbbi,"$(P)$(M)indicator_inch")
 {
@@ -332,7 +327,6 @@ record(mbbi,"$(P)$(M)indicator_inch")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 
 
@@ -340,7 +334,7 @@ record(mbbi,"$(P)$(M)indicator_greatsign")
 {
         field(DESC, "great sign indicator")
         field(DTYP, "stream")
-        field(INP, "@ND281B.proto indicatorsback($(P)$(M)indicator_greatsign,$(P)$(M)indicator_equalsign,$(P)$(M)indicator_lesssign,$(P)$(M)indicator_MIN,$(P)$(M)indicator_ACTL,$(P)$(M)indicator_MAX,$(P)$(M)indicator_DIFF) $(PORT)")
+        field(INP, "@ND281B.proto indicatorsback($(P)$(M)indicator_equalsign,$(P)$(M)indicator_lesssign,$(P)$(M)indicator_MIN,$(P)$(M)indicator_ACTL,$(P)$(M)indicator_MAX,$(P)$(M)indicator_DIFF) $(PORT)")
         field(ZRVL, "0")
         field(ZRST, "dark")
         field(ONVL, "1")
@@ -360,7 +354,6 @@ record(mbbi,"$(P)$(M)indicator_equalsign")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 
 record(mbbi,"$(P)$(M)indicator_lesssign")
@@ -372,7 +365,6 @@ record(mbbi,"$(P)$(M)indicator_lesssign")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 record(mbbi,"$(P)$(M)indicator_MIN")
 {
@@ -383,7 +375,6 @@ record(mbbi,"$(P)$(M)indicator_MIN")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 
 record(mbbi,"$(P)$(M)indicator_ACTL")
@@ -395,7 +386,6 @@ record(mbbi,"$(P)$(M)indicator_ACTL")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 record(mbbi,"$(P)$(M)indicator_MAX")
 {
@@ -406,7 +396,6 @@ record(mbbi,"$(P)$(M)indicator_MAX")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
 
 record(mbbi,"$(P)$(M)indicator_DIFF")
@@ -418,5 +407,4 @@ record(mbbi,"$(P)$(M)indicator_DIFF")
         field(ONST, "glows")
         field(TWVL, "2")
         field(TWST, "blinks")
-        field(SCAN, "1 second")
 }
